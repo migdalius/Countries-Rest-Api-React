@@ -1,0 +1,29 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  height: 80px;
+  background-color: hsl(0, 0%, 100%);
+  border-bottom: 1px solid #ddd;
+}
+
+.text-logo {
+  font-size: 22px;
+  font-weight: 800;
+  margin-left: 60px;
+  color: hsl(200, 15%, 8%);
+}
+
+.dark-mode {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-right: 60px;
+}
+
+.dark-mode p {
+  font-size: 16px;
+  font-weight: 600;
+}
