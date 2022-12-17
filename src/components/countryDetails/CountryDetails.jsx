@@ -16,7 +16,6 @@ const CountryDetails = () => {
       .then((response) => setDetail(response.data));
   }, []);
 
-  console.log(detail[0]);
   return (
     <div className="CountryDetails__main-container">
       <div className="CountryDetails__button-container">
@@ -57,7 +56,10 @@ const CountryDetails = () => {
                     <b>Native Name:</b> {detail[0]?.name.official}
                   </li>
                   <li>
-                    <b>Population:</b> {detail[0]?.population}
+                    <b>Population:</b>{" "}
+                    {detail[0]?.population
+                      .toString()
+                      .replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")}
                   </li>
                   <li>
                     <b>Region:</b> {detail[0]?.region}
@@ -76,10 +78,11 @@ const CountryDetails = () => {
                     <b>Top Level Domain:</b> {detail[0]?.tld}
                   </li>
                   <li>
-                    <b>Curriencies:</b>
+                    <b>Curriencies:</b>{" "}
+                    {Object.keys(detail[0]?.currencies || {})}
                   </li>
                   <li>
-                    <b>Languages:</b>
+                    <b>Languages:</b> {Object.keys(detail[0]?.languages || {})}
                   </li>
                 </ul>
               </div>

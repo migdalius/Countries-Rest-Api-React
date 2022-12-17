@@ -1,8 +1,6 @@
 import "../hero/hero.css";
-import flags from "../flags/Flags";
 
-const Hero = ({ country }) => {
-  console.log(country);
+const Hero = ({}) => {
   return (
     <section className="main">
       <div className="container">

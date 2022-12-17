@@ -35,6 +35,7 @@
 .CountryDetails_image-flag {
   width: 600px;
   height: auto;
+  border: 1px solid #ddd;
 }
 
 .CountryDetails_desc_container {
@@ -62,6 +63,7 @@
 
 .Country__borders {
   display: flex;
+
   margin-top: 40px;
   align-items: center;
   gap: 10px;
@@ -78,5 +80,6 @@
 
 .Country__borders-button-container {
   display: flex;
+
   gap: 5px;
 }
