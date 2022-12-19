@@ -1,0 +1,28 @@
+.dark-mode {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-right: 60px;
+}
+
+.dark-mode p {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.t {
+  width: 50px;
+  height: 25px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.t-button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #ddd;
+  position: absolute;
+  left: 0;
+}
